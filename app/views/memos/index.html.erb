@@ -1,0 +1,11 @@
+<h1>Memos</h1>
+
+<ul>
+  <% @memos.each do |memo| %>
+    <li>
+      <%= link_to memo.title, memo %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "New Memo", new_memo_path %>
